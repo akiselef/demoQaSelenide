@@ -32,7 +32,18 @@ public class DemoQaPageTests {
         $x("//div[text()='Select City']").click();
         $("#react-select-4-option-1").click();
         $("#submit").click();
-        $x("//td[text()='1234567890']").should(visible);
+        $x("//td[text()='1234567890']").shouldBe(visible);
+        $x("//td[text()='User Name']").shouldBe(visible);
+        $x("//td[text()='a@a.com']").shouldBe(visible);
+        $x("//td[text()='Male']").shouldBe(visible);
+        $x("//td[text()='1234567890']").shouldBe(visible);
+        $x("//td[text()='1234567890']").shouldBe(visible);
+        $x("//td[text()='17 April,2007']").shouldBe(visible);
+        $x("//td[text()='English']").shouldBe(visible);
+        $x("//td[text()='Music']").shouldBe(visible);
+        $x("//td[text()='download.jpg']").shouldBe(visible);
+        $x("//td[text()='ul. Pushkina, Kolotushkina app']").shouldBe(visible);
+        $x("//td[text()='Haryana Panipat']").shouldBe(visible);
     }
 
 }
